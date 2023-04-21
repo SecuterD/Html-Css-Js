@@ -3,21 +3,40 @@ body {
     background-color: #FFFFFF;
 }
 
+body.dark-theme {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
 header {
     margin: 50px 0 50px 0;
     text-align: center;
 }
 
-header > h1 {
+header>h1 {
     font-size: 1.75em;
     font-weight: bold;
+}
+
+#dm-switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url("../pics/dark.png");
+    background-size: 50px 50px;
+}
+
+body.dark-theme #dm-switch {
+    background-image: url("../pics/light.png");
 }
 
 #content {
     padding: 1%;
 }
 
-#content > section {
+#content>section {
     box-sizing: border-box;
     padding: 1%;
 }
@@ -26,7 +45,7 @@ section.box {
     float: left;
 }
 
-section.box > div.par {
+section.box>div.par {
     border: 1px solid #000000;
     box-sizing: border-box;
     background-color: #BBBBBB;
@@ -43,19 +62,40 @@ section.box section.title {
     padding: 1% 3%;
 }
 
+body.dark-theme section.box>div.par {
+    border-color: #FFFFFF;
+    background-color: #333333;
+}
+
+body.dark-theme section.box section.title {
+    border-color: #FFFFFF;
+}
+
 section.box:nth-child(1) section.title {
     background-color: #FFCCBB;
+}
+
+body.dark-theme section.box:nth-child(1) section.title {
+    background-color: #775544;
 }
 
 section.box:nth-child(2) section.title {
     background-color: #BBFFBB;
 }
 
+body.dark-theme section.box:nth-child(2) section.title {
+    background-color: #447744;
+}
+
 section.box:nth-child(3) section.title {
     background-color: #BBCCFF;
 }
 
-section.box section.title > h3 {
+body.dark-theme section.box:nth-child(3) section.title {
+    background-color: #445577;
+}
+
+section.box section.title>h3 {
     margin: 0 auto 0 auto;
     font-size: 1.25em;
     font-weight: bold;
