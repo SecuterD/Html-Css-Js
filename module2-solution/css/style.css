@@ -4,7 +4,7 @@ body {
 }
 
 body.dark-theme {
-    color: #FFFFFF;
+    color: #EEEEEE;
     background-color: #000000;
 }
 
@@ -24,12 +24,12 @@ header>h1 {
     right: 0;
     width: 50px;
     height: 50px;
-    background-image: url("../pics/dark.png");
+    background-image: url("../pics/light.png");
     background-size: 50px 50px;
 }
 
 body.dark-theme #dm-switch {
-    background-image: url("../pics/light.png");
+    filter: invert(100%);
 }
 
 #content {
