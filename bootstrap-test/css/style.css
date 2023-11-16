@@ -1,0 +1,62 @@
+/* Colors */
+:root {
+    --red-bg: #661122;
+    --yellow-bg: #ffbb22;
+    --black: #111111;
+    --white: #EEEEEE;
+    --green: #557733;
+}
+
+body {
+    color: var(--black);
+    background: var(--red-bg);
+    font-family: "0xygen", sans-serif;
+}
+
+/* Header */
+#header-nav {
+    background-color: var(--yellow-bg);
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    background-image: url("../pics/panda.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px 10px 0;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    font-family: "Lora", serif;
+    color: var(--green);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px var(--font-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.navbar-brand p {
+    color: var(--font-color);
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
+}
